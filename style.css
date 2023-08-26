@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.product-description-box {
+  padding: 30px;
+}
+
+.main-header {
+  margin-top: 27px;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 30px;
+}
+
+.sec-header {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-description {
+  margin-top: 27px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 25px;
+}
+
+.prices-box {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+}
+
+s {
+  color: hsl(228, 12%, 48%);
+}
+
+.former-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 27px;
+  border: none;
+  background-color: #3c8067;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1e4034;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 125px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 2000px) {
+  .product-img-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-img {
+    display: none;
+  }
+
+  .product-img-mobile {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .container {
+    max-width: 340px;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+
+  .main-header {
+    margin-top: 10px;
+  }
+
+  .product-description {
+    margin-top: 15px;
+  }
+
+  .product-description-box {
+    padding: 25px;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  .prices-box {
+    margin-top: 20px;
+  }
+}
